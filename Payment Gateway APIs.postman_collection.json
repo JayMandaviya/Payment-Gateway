@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "d8724fdb-43a5-45c7-8793-cad2bddbfa7d",
+		"name": "Payment Gateway APIs",
+		"description": "Collection of APIs for payment gateway functionality",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19895178"
+	},
+	"item": [
+		{
+			"name": "Initiate Payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"productId\": \"1234567\",\"email\":\"jaymandaviya10@gmail.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/payment/initiate-payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"payment",
+						"initiate-payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Verification Code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"transactionId\": \"yfkfil\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/verification/send-verification-code",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"verification",
+						"send-verification-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"transactionId\": \"yfkfil\", \"code\": \"199283\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/verification/verify-code",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"verification",
+						"verify-code"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

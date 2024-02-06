@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Compiled TypeScript files
+dist/
+
+# Environment variables file
+.env
+
+# Log files
+logs/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Compiled JavaScript files (if any)
+*.js
