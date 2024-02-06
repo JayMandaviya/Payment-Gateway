@@ -24,6 +24,7 @@ Create a .env file in the root directory.
 Define the following variables in the .env file:
 makefile
 Copy code
+
 PORT=3000
 DB_NAME=your_database_name
 DB_USER=your_database_user
@@ -36,13 +37,6 @@ MAIL_PASSWORD=your_mail_password
 Initialize the database:
 
 Create a MySQL database with the name specified in the .env file.
-Run Sequelize migrations to create the tables:
-arduino
-Copy code
-npm run migrate
-Start the server:
-
-sql
-Copy code
 npm start
+
 The server will start running at http://localhost:3000.
